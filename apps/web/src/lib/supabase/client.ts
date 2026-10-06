@@ -1,0 +1,1 @@
+export { createClient, type BrowserClient, readBrowserEnv } from '@dbi/database/browser';

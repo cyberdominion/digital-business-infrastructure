@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/config" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/database" },
+    { "path": "./packages/auth" },
+    { "path": "./packages/ai" },
+    { "path": "./packages/crm" },
+    { "path": "./packages/payments" },
+    { "path": "./packages/automation" },
+    { "path": "./apps/web" }
+  ]
+}

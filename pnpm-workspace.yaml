@@ -1,0 +1,12 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# pnpm 10 blocks lifecycle scripts of dependencies by default.
+# Only these are approved for this monorepo (esbuild-style binaries).
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - unrs-resolver
+  - "@tailwindcss/oxide"
+  - turbo

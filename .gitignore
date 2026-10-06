@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+
+# Next.js
+next-env.d.ts
+
+# Environment — never commit real secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Supabase
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+supabase/config.toml.local
+
+# Testing
+coverage/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Vercel
+.vercel/
+
+# Local database volumes
+pgdata/

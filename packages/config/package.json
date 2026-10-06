@@ -1,0 +1,21 @@
+{
+  "name": "@dbi/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base": "./tsconfig.base.json",
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./typescript": "./typescript.json",
+    "./eslint": "./eslint.config.mjs",
+    "./vitest": "./vitest.config.ts"
+  },
+  "files": [
+    "*.json",
+    "*.mjs",
+    "*.ts"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

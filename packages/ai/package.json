@@ -1,0 +1,41 @@
+{
+  "name": "@dbi/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./scoring": {
+      "types": "./dist/scoring.d.ts",
+      "import": "./dist/scoring.js",
+      "require": "./dist/scoring.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rimraf dist .turbo",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@dbi/database": "workspace:*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@dbi/config": "workspace:*",
+    "eslint": "^10.12.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
