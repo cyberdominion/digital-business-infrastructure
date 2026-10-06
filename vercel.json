@@ -3,11 +3,10 @@
     {
       "name": "web",
       "root": "apps/web",
+      "outputDirectory": ".next",
       "build": {
-        "env": [
-          "NEXT_PUBLIC_SUPABASE_URL",
-          "NEXT_PUBLIC_SUPABASE_ANON_KEY"
-        ]
+        "command": "pnpm --filter @dbi/web... build",
+        "env": ["NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_ANON_KEY"]
       }
     }
   ]
